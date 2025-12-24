@@ -9,6 +9,9 @@ def getchoices():
     choices = { "player" : player_choice, "computer": computer_choice }
     return choices
 
+def checkWinner(player, computer):
+    if(player == computer):
+        return "Its a tie"
 def greeting():
     print("Hi")
 
