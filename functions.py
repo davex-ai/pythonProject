@@ -1,13 +1,11 @@
 import random
 
-
 def getchoices():
     print("Welcome To the RPS Game🎉🎉")
     player_choice = input("rock, paper, scissors: ")
     opt = ['Rock', 'Paper', 'Scissors']
     computer_choice = random.choice(opt)
     choices = { "player" : player_choice, "computer": computer_choice }
-    check_winner(player_choice, computer_choice)
     return choices
 
 def check_winner(player, computer):
@@ -29,10 +27,6 @@ def check_winner(player, computer):
     else:
         print("Invalid option")
 
-def greeting():
-    print("Hi")
-
-check_winner("Paper", "Paper")
-greeting()
-# picks = getchoices()
-# print(picks)
+picks = getchoices()
+res = check_winner(picks["player"], picks["computer"])
+print(res)
