@@ -11,14 +11,28 @@ def getchoices():
     return choices
 
 def check_winner(player, computer):
-    print("Your choice: " + player + ", Computer Choice: " + computer)
+    print(f"Your choice: {player}, Computer Choice: {computer}")
     if player == computer:
-        return "Its a tie p🎉"
+        return "Its a tie 🎉"
+    elif player == "rock" and computer == "scissors":
+        return "Player Wins"
+    elif player == "rock" and computer == "paper":
+        return "Computer Wins"
+    elif player == "paper" and computer == "rock":
+        return "Player Wins"
+    elif player == "paper" and computer == "scissors":
+        return "Computer Wins"
+    elif player == "scissors" and computer == "paper":
+        return "Player Wins"
+    elif player == "scissors" and computer == "rock":
+        return "Computer Wins"
+    else:
+        print("Invalid option")
 
 def greeting():
     print("Hi")
 
-
+check_winner("Paper", "Paper")
 greeting()
-picks = getchoices()
-print(picks)
+# picks = getchoices()
+# print(picks)
