@@ -12,6 +12,7 @@ dave""")
 
 # String Methods
 chair = "chAir"
+print("String Methods")
 print(chair.title()) #Capitalizes the first letter
 print(chair.islower()) #Checks if it's all lowercase
 print(chair.upper()) #Capitalizes the whole string
@@ -28,3 +29,9 @@ print(chair.isalpha()) #check if it contains a letter
 print(chair.isdigit()) # check if it contains a digit
 print(len(chair)) # return length of string
 print("Ai" in  chair) # checks for substring
+
+#String as Array
+print("\n String as an array")
+lang = "python"
+print(lang[2])
+print(lang[2:4])
