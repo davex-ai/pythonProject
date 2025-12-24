@@ -1,0 +1,8 @@
+scores = (34, 167, 89, 84)
+print(scores[0])
+print(len(scores))
+print(84 in scores)
+print(scores[0:2])
+print(sorted(scores))
+new_score = scores + (67, 90)
+print(new_score)
