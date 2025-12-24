@@ -1,14 +1,18 @@
+import random
 
 
 def getchoices():
-    player_choice = "rock"
-    computer_choice = "paper"
-    return player_choice
+    print("Welcome To the RPS Game🎉🎉")
+    player_choice = input("Rock, Paper, Scissors: ")
+    opt = ['Rock', 'Paper', 'Scissors']
+    computer_choice = random.choice(opt)
+    choices = { "player" : player_choice, "computer": computer_choice }
+    return choices
 
 def greeting():
     print("Hi")
 
 
 greeting()
-choices = getchoices()
-print(choices)
+picks = getchoices()
+print(picks)
