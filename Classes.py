@@ -2,7 +2,7 @@ class Animal:
     def walk(self):
         print("walking")
 class Dog(Animal): # Dog is inheriting walk from animal class
-    def __init__(self, name, age):
+    def __init__(self, name, age): # This is a constructor
         self.name = name
         self.age = age
 
