@@ -24,15 +24,19 @@ print(list(filter(lambda n : n % 2 == 0, numb)))
 # Reduce
 """Normal Way"""
 expenses = [
-    ('Crocs', 15000 ),
-    ('Laptop', 650000 ),
-    ('Headphone', 25000 ),
+    ('Crocs', 15000),
+    ('Laptop', 650000),
+    ('Headphone', 25000),
 ]
+
+# Normal sum
 total = 0
-for expenses in expenses:
-    total += expenses[1]
-print(total)
-"""Lambda Way"""
-add = reduce(lambda a, b: a[1] + b[1] , expenses)
-print(add)
+for item in expenses:
+    total += item[1]
+print(total)  # 690000
+
+# Lambda / reduce way
+add = reduce(lambda total, item: total + item[1], expenses, 0)
+print(add)  # 690000
+
 
