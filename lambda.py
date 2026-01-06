@@ -33,10 +33,10 @@ expenses = [
 total = 0
 for item in expenses:
     total += item[1]
-print(total)  # 690000
+print(total)
 
 # Lambda / reduce way
 add = reduce(lambda total, item: total + item[1], expenses, 0)
-print(add)  # 690000
+print(add)
 
 
