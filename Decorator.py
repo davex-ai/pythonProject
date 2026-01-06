@@ -11,5 +11,5 @@ def logtime(func):
 @logtime
 def hello():
     print("hello")
-
+print("hii")
 hello()
