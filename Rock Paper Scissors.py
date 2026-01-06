@@ -3,7 +3,7 @@ import random
 def getchoices():
     print("Welcome To the RPS Game🎉🎉")
     player_choice = input("rock, paper, scissors: ")
-    opt = ['Rock', 'Paper', 'Scissors']
+    opt = ['rock', 'paper', 'scissors']
     computer_choice = random.choice(opt)
     choices = { "player" : player_choice, "computer": computer_choice }
     return choices
